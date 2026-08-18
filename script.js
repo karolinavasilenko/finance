@@ -1,0 +1,3 @@
+document.querySelector('.menu').addEventListener('click',()=>document.querySelector('nav').classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+document.querySelectorAll('.toggle').forEach(btn=>btn.addEventListener('click',()=>{const items=btn.nextElementSibling;items.classList.toggle('show');btn.querySelector('span').textContent=items.classList.contains('show')?'⌃':'⌄'}));
